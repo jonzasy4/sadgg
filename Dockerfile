@@ -2,10 +2,7 @@
 FROM kalilinux/kali-rolling
 
 # Install necessary packages
-RUN apt update && \
-    apt upgrade && \
-    apt install neofetch && \
-    apt-get update && \
+RUN apt-get update && \
     apt-get install -y shellinabox && \
     apt-get install -y systemd && \
     apt-get clean && \
